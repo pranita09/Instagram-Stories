@@ -1,42 +1,42 @@
 {
   "stories": [
     {
-      "id": "aurora-lake",
+      "id": "1",
       "imageUrl": "https://picsum.photos/id/1015/1080/1920",
       "alt": "Boat on a misty lake at dawn"
     },
     {
-      "id": "desert-road",
+      "id": "2",
       "imageUrl": "https://picsum.photos/id/1019/1080/1920",
       "alt": "Winding road through red rock canyon"
     },
     {
-      "id": "forest-path",
+      "id": "3",
       "imageUrl": "https://picsum.photos/id/1025/1080/1920",
       "alt": "Majestic bear in tall grass"
     },
     {
-      "id": "coastal-cliffs",
+      "id": "4",
       "imageUrl": "https://picsum.photos/id/1043/1080/1920",
       "alt": "Steep sea cliffs and turquoise water"
     },
     {
-      "id": "city-lights",
+      "id": "5",
       "imageUrl": "https://picsum.photos/id/1047/1080/1920",
       "alt": "Urban skyline at blue hour"
     },
     {
-      "id": "mountain-hike",
+      "id": "6",
       "imageUrl": "https://picsum.photos/id/1067/1080/1920",
       "alt": "Snow-capped peaks above the clouds"
     },
     {
-      "id": "tropical-beach",
+      "id": "7",
       "imageUrl": "https://picsum.photos/id/1080/1080/1920",
       "alt": "Palm trees and turquoise shoreline"
     },
     {
-      "id": "northern-lights",
+      "id": "8",
       "imageUrl": "https://picsum.photos/id/1022/1080/1920",
       "alt": "Northern lights over snowy hills"
     }
