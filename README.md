@@ -1,73 +1,29 @@
-# React + TypeScript + Vite
+# Instagram Stories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Build “Instagram Stories” feature
 
-Currently, two official plugins are available:
+### Task
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Develop a simplified version of the Instagram Stories feature. This application should allow users to view a series of “stories”—short, temporary posts that disappear after a set period (for the purposes of this assignment, the disappearance logic does not need to be implemented). The focus will be on the user interface and interaction, rather than backend logic or persistence.
 
-## React Compiler
+### Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Build this only for mobile and not desktop.
+- A list of stories (only images) should be visible in a smaller view in a horizontally scrollable list.
+- Fetch the list of stories from an external file.
+- User should be able to start viewing one of the available stories from list.
+- The user should be able to manually navigate between stories using UI controls. Tapping on the left side of an open story should take the user to the previous story. Tapping on the right side of an open story should take the user to the next story.
+- Stories should automatically advance to the next one after 5 seconds. The loading states should be handled properly.
+- Do **not** use any external library for the core functionality.
+- **Optional:** Use transitions for smoother story viewing.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Run locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Built with React, TypeScript, and Vite.
